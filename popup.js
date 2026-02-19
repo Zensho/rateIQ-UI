@@ -1,39 +1,30 @@
 const MOCK_DATA = {
-  product: "Sony WH-1000XM5 Wireless Noise Cancelling Headphones",
-  confidence: 92,
+  product: "Entered-Product-Name",
+  confidence: "Average sentiment_score",
   recommendation: {
-    verdict: "Strong Buy",
-    type: "buy", // "buy" | "dont-buy" | "consider"
+    verdict: "Strong Buy", // "Strong Buy"|"Buy"|"No-Buy"|"Strong No-Buy (Confidence > 80)
+    type: "buy", // "buy" | "dont-buy"
     summary:
-      "Overwhelmingly positive sentiment across all platforms. Reviewers consistently praise the noise cancellation and comfort, with minor concerns about price and durability.",
+      "LLM-summarize video review scripts",
   },
   sentiment: {
-    positive: 72,
-    neutral: 18,
-    negative: 10,
+    positive: "Positive-percentage",
+    negative: "Negative-percentage",
   },
-  totalReviews: 196,
+  totalReviews: "Total-Comments Analyzed",
   value: {
-    score: 85,
+    score: "LLM-summary score*0.5 + Positive-percentage*0.5",
     description:
-      "At its current price point, the XM5 delivers exceptional value. Superior ANC, 30-hour battery life, and multipoint connectivity justify the premium over competitors.",
+      "LLM-review",
   },
   pros: [
-    "Industry-leading active noise cancellation",
-    "Extremely comfortable for extended wear",
-    "30-hour battery life with quick charging",
-    "Excellent multipoint Bluetooth connectivity",
+    "LLM-Analyzed Pros"
   ],
   cons: [
-    "Premium price point vs competitors",
-    "No foldable design — less portable",
-    "Touch controls can be finicky",
-    "Limited EQ customization without app",
+    "LLM-Analyzed Cons"
   ],
   sources: [
-    { platform: "tiktok", name: "TikTok", count: 45 },
-    { platform: "reddit", name: "Reddit", count: 128 },
-    { platform: "youtube", name: "YouTube", count: 23 },
+    { platform: "youtube", name: "YouTube", count: "Total-Comments Analyzed" },
   ],
 };
 
